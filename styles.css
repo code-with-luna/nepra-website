@@ -234,3 +234,56 @@
       font-size: 0.95rem;
     }
   }
+/* Marquee Container */
+.np-logos-marquee {
+  overflow: hidden;
+  background: #f8f9fa; /* Light background */
+  padding: 15px 0;
+  width: 100%;
+  position: relative;
+}
+
+/* Wrapper for Logos */
+.np-logos-wrapper {
+  display: flex;
+  gap: 107.3px; /* Space between logos */
+  animation: slide-logos 10s linear infinite;
+}
+
+/* Logo Styling */
+.np-logos-wrapper a img {
+  height: 40px; /* Adjust logo size */
+  width: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.np-logos-wrapper a img:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Pause Animation on Hover */
+.np-logos-marquee:hover .np-logos-wrapper {
+  animation-play-state: paused;
+}
+
+/* Keyframes for Sliding Animation */
+@keyframes slide-logos {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .np-logos-wrapper a img {
+    height: 30px; /* Smaller logos on small screens */
+  }
+  .np-logos-wrapper {
+    gap: 30px; /* Reduced space between logos */
+  }
+}
