@@ -1,0 +1,68 @@
+
+<!-- Compliance Form -->
+<section class="container my-5" style="max-width: 1100px; margin: 0 auto; padding: 40px; background: #f8f9fa; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <h2 class="text-center mb-4" style="color:#003366;">NEPRA Compliance Form</h2>
+
+  <form id="complianceForm" novalidate>
+    <!-- Name (full width) -->
+    <div class="mb-3">
+      <label for="name" class="form-label fw-bold">Full Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name">
+      <small class="error" id="nameError"></small>
+    </div>
+
+    <!-- Email | Phone -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="email" class="form-label fw-bold">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+        <small class="error" id="emailError"></small>
+      </div>
+      <div class="col-md-6">
+        <label for="phone" class="form-label fw-bold">Phone</label>
+        <input type="text" id="phone" class="form-control" placeholder="Enter phone number">
+        <small class="error" id="phoneError"></small>
+      </div>
+    </div>
+
+    <!-- Company | Job Title -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="company" class="form-label fw-bold">Company / Organization</label>
+        <input type="text" id="company" class="form-control" placeholder="Enter company name">
+        <small class="error" id="companyError"></small>
+      </div>
+      <div class="col-md-6">
+        <label for="job" class="form-label fw-bold">Job Title / Role</label>
+        <input type="text" id="job" class="form-control" placeholder="Enter your role">
+        <small class="error" id="jobError"></small>
+      </div>
+    </div>
+
+    <!-- Date | Time -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="date" class="form-label fw-bold">Select Date</label>
+        <input type="date" id="date" class="form-control">
+        <small class="error" id="dateError"></small>
+      </div>
+      <div class="col-md-6">
+        <label for="time" class="form-label fw-bold">Select Time</label>
+        <input type="time" id="time" class="form-control">
+        <small class="error" id="timeError"></small>
+      </div>
+    </div>
+
+    <!-- Terms -->
+    <div class="form-check mb-3">
+      <input type="checkbox" id="terms" class="form-check-input">
+      <label for="terms" class="form-check-label">I agree to the Terms & Conditions</label>
+      <small class="error" id="termsError"></small>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary px-4 py-2">Submit</button>
+    </div>
+  </form>
+</section>

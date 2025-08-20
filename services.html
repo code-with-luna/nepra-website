@@ -1,0 +1,138 @@
+
+<!-- ===== Services Section (4x2 Layout) ===== -->
+<section class="container my-5 np-section">
+  <h2 class="text-center mb-4" style="color:#020345;">What’s Included in the Standard Service?</h2>
+
+  <style>
+    :root{
+      --brand-navy:#020345;
+      --card-border:#D9DEE8;
+      --card-shadow: 0 6px 10px rgba(0,0,0,.12);
+      --icon:#1E3A8A;
+    }
+
+    .np-section { padding-top: 55px; }
+    @media (max-width: 768px){ .np-section { padding-top: 110px; } }
+
+    /* 4x2 Grid */
+    .np-grid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    @media (max-width: 767.98px){ .np-grid{ grid-template-columns: 1fr; } }
+
+    .np-card {
+  background:#fff;
+  border:1px solid var(--card-border);
+  border-radius:0;
+  box-shadow: var(--card-shadow);
+  padding:20px 22px;
+  display:flex;
+  align-items:center;       /* icon + text on same line */
+  gap:12px;
+  color: var(--brand-navy);
+  font-weight:400;
+  line-height:1.4;
+  transition: all 0.3s ease;  /* smooth hover transition */
+}
+.np-card svg path {
+  transition: stroke 0.3s ease;
+}
+
+/* Hover effect */
+.np-card:hover {
+  background: #020345;       /* dark blue */
+  color: #ade8f4;            /* light blue for text */
+  cursor: pointer;
+}
+
+.np-card:hover svg path {
+  stroke: #ade8f4;           /* light blue for icon */
+}
+
+    .np-icon{
+      width:22px; height:22px;
+      flex:0 0 auto;
+    }
+
+    .np-card p{
+      margin:0;
+    }
+  </style>
+
+  <div class="np-grid">
+    <!-- Card 1 -->
+    <div class="np-card">
+      <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+        <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>Security Policy Management for IT and OT assets as a Service.</p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="np-card">
+      <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+        <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>Security controls implementation and improvement as a Service</p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="np-card">
+      <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+        <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>Security Risk Vulnerability Assessment as a Service</p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="np-card">
+      <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+        <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>Data Management as a Service</p>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="np-card">
+      <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+        <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>Audit and Risk Assessment as a Service</p>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="np-card">
+      <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+        <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>Monitoring and incident response as a Service</p>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="np-card">
+      <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+        <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>Awareness and Training as a Service</p>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="np-card">
+      <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+        <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+        <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <p>Regulatory Reporting as a Service</p>
+    </div>
+
+  </div>
+</section>

@@ -99,9 +99,10 @@
   height: 300px;
   display: flex;
   justify-content: center; /* horizontal center */
-   padding-top: 45px;
+   padding-top: 30px;
   text-align: center;      /* center text inside */
 }
+
 .rectangle-content h1 {
   color: #90E0EF;/* change text color */
   font-size: 2.5rem; /* heading size */
@@ -189,3 +190,5 @@
   button.btn-primary:hover {
     background: #00509e;
   }
+
+  
