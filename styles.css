@@ -192,4 +192,45 @@
     background: #00509e;
   }
 
-  
+.np-regulatory {
+     max-width: 1130px;       /* slightly narrower than full width */
+  margin: 0 auto;          /* centers the section */
+  padding: 30px 20px;
+    background: #0096c7; /* nice blue from your theme */
+    color: white;      /* lighter text */
+    border-radius: 8px;
+    padding: 30px 20px;
+    margin-bottom: 40px;
+  }
+
+  .np-regulatory h3 {
+    margin-bottom: 15px;
+    color: WHITE; /* slightly brighter heading */
+  }
+
+  .np-regulatory p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+
+  .np-learn-more {
+ color: #ADE8F4;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .np-learn-more:hover {
+    color: #90e0ef;
+  }
+
+  @media (max-width: 767px) {
+    .np-regulatory {
+      padding: 20px 15px;
+    }
+    .np-regulatory h3 {
+      font-size: 1.1rem;
+    }
+    .np-regulatory p {
+      font-size: 0.95rem;
+    }
+  }
