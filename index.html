@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEPRA</title>
+     
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+  <div id="header"></div>
+
+<!-- hero scetion -->
+<section class="rectangle-box">
+  <div class="container">
+    <div class="rectangle-content">
+    <h1>Stay on Track with Proactive
+         Compliance Support</h1>
+    <p>Our Standard Service is designed for organizations that require consistent,<br>
+         hands-on support to achieve and maintain NEPRA cybersecurity compliance.</p>
+          <button class="login-btn">Login</button>
+
+          
+    <!-- Card Container -->
+    <div class="card-container">
+      <div class="d-flex justify-content-center" style="gap: 20px;">
+        
+        <!-- Card 1 -->
+        <div class="card custom-card" style="width: 18rem;">
+          <div class="card-body text-center">
+            <h5 class="card-title">BASIC</h5>
+            <p class="card-text">$1K / month</p>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card custom-card" style="width: 18rem;">
+          <div class="card-body text-center">
+            <h5 class="card-title">STANDARD</h5>
+            <p class="card-text">$2K / month</p>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card custom-card" style="width: 18rem;">
+          <div class="card-body text-center">
+            <h5 class="card-title">PREMIUM</h5>
+            <p class="card-text">$3K / month</p>
+            <a href="#" class="btn btn-primary">Get Started</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  
+</section>
+<!-- ===== Plans Section (2 / 1 long / 2) ===== -->
+<section class="container my-5 np-section">
+  <h2 class="text-center mb-4" style="color:#020345;">What’s Included in the Standard Service?</h2>
+
+  <style>
+    :root{
+      --brand-navy:#020345;
+      --card-border:#D9DEE8;
+      --card-shadow: 0 6px 10px rgba(0,0,0,.12);
+      --icon:#1E3A8A;
+    }
+
+    /* Push this section lower (works even if hero overlaps) */
+    .np-section { padding-top: 55px; }          /* adjust as needed */
+    @media (max-width: 768px){ .np-section { padding-top: 110px; } }
+
+    .np-grid{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+    @media (max-width: 767.98px){ .np-grid{ grid-template-columns: 1fr; } }
+
+    .np-card{
+      background:#fff;
+      border:1px solid var(--card-border);
+      border-radius:0;
+      box-shadow: var(--card-shadow);
+      padding:20px 22px;
+      text-align:left;
+      display:flex;
+      flex-direction: column;  /* content stacks vertically */
+      gap:10px;
+    }
+
+    /* Top row inside card: icon + heading inline */
+    .np-card-header{
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+
+    .np-icon{
+      width:22px; height:22px; flex:0 0 auto;
+    }
+
+    .np-card h3{
+      margin:0;
+      color:var(--brand-navy);   /* dark blue */
+      font-weight:700;
+      font-size:1.1rem;
+    }
+
+    .np-card p{
+      margin:0;
+      color:var(--brand-navy);
+      line-height:1.45;
+      font-weight:400;
+    }
+
+    .np-span-2{ grid-column: 1 / -1; }
+  </style>
+
+  <div class="np-grid">
+    <!-- Row 1 -->
+    <div class="np-card">
+      <div class="np-card-header">
+        <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+          <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Artifact and Documentation Support</h3>
+      </div>
+      <p>We'll work with you to maintain detailed, audit-ready documentation to demonstrate compliance.</p>
+    </div>
+
+    <div class="np-card">
+      <div class="np-card-header">
+        <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+          <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Detailed Compliance Roadmaps</h3>
+      </div>
+      <p>Get a comprehensive plan to enhance your cybersecurity posture, complete with timelines and actionable tasks.</p>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="np-card np-span-2">
+      <div class="np-card-header">
+        <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+          <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Weekly Compliance Sessions</h3>
+      </div>
+      <p>Our NEPRA compliance consultant will meet with your team four times a month to review progress, address challenges, and guide you toward compliance.</p>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="np-card">
+      <div class="np-card-header">
+        <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+          <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>Enhanced Advisory Services</h3>
+      </div>
+      <p>Get additional insights and advice on:</p>
+      <p>->Security Policy Management<br>
+        ->Risk and Vulnerability Assessments<br>
+        ->Awareness and Training</p>
+    </div>
+
+    <div class="np-card">
+      <div class="np-card-header">
+        <svg class="np-icon" viewBox="0 0 24 24" fill="none">
+          <path d="M12 3l7 3v6c0 4.418-3.582 8-8 8s-8-3.582-8-8V6l9-3z" stroke="var(--icon)" stroke-width="1.6" fill="white"/>
+          <path d="M9 12l2 2 4-4" stroke="var(--icon)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>How You Benefit:</h3><br>
+      </div>
+      <p>->Stay on top of compliance with regular, dedicated support.<br><br>
+        ->Minimize risk with improved IT and OT security controls.<br>
+        <br>->Build a strong cybersecurity framework for audits and beyond.</p>
+    </div>
+  </div>
+</section>
+<!-- Compliance Form -->
+<section class="container my-5" style="max-width: 1100px; margin: 0 auto; padding: 40px; background: #f8f9fa; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <h2 class="text-center mb-4" style="color:#003366;">NEPRA Compliance Form</h2>
+
+  <form id="complianceForm" novalidate>
+    <!-- Name (full width) -->
+    <div class="mb-3">
+      <label for="name" class="form-label fw-bold">Full Name</label>
+      <input type="text" id="name" class="form-control" placeholder="Enter your name">
+      <small class="error" id="nameError"></small>
+    </div>
+
+    <!-- Email | Phone -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="email" class="form-label fw-bold">Email</label>
+        <input type="email" id="email" class="form-control" placeholder="Enter your email">
+        <small class="error" id="emailError"></small>
+      </div>
+      <div class="col-md-6">
+        <label for="phone" class="form-label fw-bold">Phone</label>
+        <input type="text" id="phone" class="form-control" placeholder="Enter phone number">
+        <small class="error" id="phoneError"></small>
+      </div>
+    </div>
+
+    <!-- Company | Job Title -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="company" class="form-label fw-bold">Company / Organization</label>
+        <input type="text" id="company" class="form-control" placeholder="Enter company name">
+        <small class="error" id="companyError"></small>
+      </div>
+      <div class="col-md-6">
+        <label for="job" class="form-label fw-bold">Job Title / Role</label>
+        <input type="text" id="job" class="form-control" placeholder="Enter your role">
+        <small class="error" id="jobError"></small>
+      </div>
+    </div>
+
+    <!-- Date | Time -->
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <label for="date" class="form-label fw-bold">Select Date</label>
+        <input type="date" id="date" class="form-control">
+        <small class="error" id="dateError"></small>
+      </div>
+      <div class="col-md-6">
+        <label for="time" class="form-label fw-bold">Select Time</label>
+        <input type="time" id="time" class="form-control">
+        <small class="error" id="timeError"></small>
+      </div>
+    </div>
+
+    <!-- Terms -->
+    <div class="form-check mb-3">
+      <input type="checkbox" id="terms" class="form-check-input">
+      <label for="terms" class="form-check-label">I agree to the Terms & Conditions</label>
+      <small class="error" id="termsError"></small>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary px-4 py-2">Submit</button>
+    </div>
+  </form>
+</section>
+
+
+<!-- Custom CSS 
+<style>
+  
+</style>-->
+
+
+<script src="form-validation.js"></script>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    async function loadComponent(id, file) {
+      const response = await fetch(file);
+      document.getElementById(id).innerHTML = await response.text();
+    }
+    loadComponent("header", "header.html");
+  </script>
+</body>
+</html>
