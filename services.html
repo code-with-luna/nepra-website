@@ -1,7 +1,11 @@
 
 <!-- ===== Services Section (4x2 Layout) ===== -->
 <section class="container my-5 np-section">
-  <h2 class="text-center mb-4" style="color:#020345;">What’s Included in the Standard Service?</h2>
+<!-- Marquee Section -->
+<div class="np-marquee-full">
+  <p>Join our webinar: Achieving NEPRA Cybersecurity Compliance with Kaspersky</p>
+</div>
+
 
   <style>
     :root{
@@ -11,8 +15,8 @@
       --icon:#1E3A8A;
     }
 
-    .np-section { padding-top: 55px; }
-    @media (max-width: 768px){ .np-section { padding-top: 110px; } }
+    .np-section { padding-top: 23px; }
+    @media (max-width: 768px){ .np-section { padding-top: 30px; } }
 
     /* 4x2 Grid */
     .np-grid{
@@ -59,6 +63,46 @@
     .np-card p{
       margin:0;
     }
+   /* Full-width marquee */
+.np-marquee-full {
+  width: 100vw;               /* full viewport width */
+  overflow: hidden;
+  background:  #f8f9fa;        /* dark blue from theme */
+  padding: 12px 0;
+   margin-bottom: 30px;
+  margin-left: calc(-50vw + 50%);  /* removes container padding */
+}
+
+/* Marquee text */
+.np-marquee-full p {
+  display: inline-block;
+  white-space: nowrap;
+  color: #020345;             /* light blue */
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding-left: 100%;         /* start off-screen */
+  animation: scroll-left 20s linear infinite;
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+/* Scroll animation */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Pause on hover + hand cursor */
+.np-marquee-full:hover p {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 767px){
+  .np-marquee-full p { font-size: 0.9rem; }
+}
+
   </style>
 
   <div class="np-grid">
