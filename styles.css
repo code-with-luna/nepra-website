@@ -165,6 +165,59 @@
   background-color: #020345 !important; /* darker shade on hover */
   border-color:#020345 !important;
 }
+/* Mobile-only overrides */
+@media (max-width: 767px) {
+  /* Let hero expand */
+  .rectangle-box {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  /* ✅ cancel absolute positioning of cards */
+  .card-container {
+    position: static !important;   /* flow below hero text */
+    transform: none !important;
+    bottom: auto !important;
+    left: auto !important;
+    margin-top: 20px;              /* spacing below hero text */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Stack cards vertically */
+  .card-container .d-flex {
+    flex-direction: column !important;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card-container .custom-card {
+    width: 200% !important;
+    max-width: 350px;
+  }
+
+  /* scale down hero text */
+  .rectangle-content h1 {
+    font-size: 1.5rem;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  .rectangle-content p {
+    font-size: 0.9rem;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* smaller login button */
+  .login-btn {
+    right: 8px;
+    top: 8px;
+    padding: 0.25rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
 
 
 
@@ -399,8 +452,16 @@
     margin-bottom: 5px; /* keeps spacing with text */
     transform: translateY(-10px); /* move logo up */
   }
-  .footer-services {
-    grid-template-columns: 1fr;  /* single column on mobile */
-    gap: 12px;
+  .footer-heading {
+    margin-left: 0 !important; /* reset forced margin */
+    text-align: left;          /* keep it left-aligned */
   }
+
+  .footer-services {
+    grid-template-columns: 1fr;  /* single column */
+    gap: 12px;
+    margin-left: 0;             /* reset left margin */
+    justify-items: start;       /* align items to the left */
+  
+}
 }
